@@ -26,10 +26,11 @@ App.models.cloudcallPage = new App.Model.PageModel({
 });
 
 App.models.statsPage = new App.Model.PageModel({
-  title: 'Stats',
-  header: 'Stats',
-  titleWidth: '50',
-  text: 'In addition to all of our App install/usage Analytics, you can also instrument your cloud code to see exactly how it is performing. Go to the Stats section of the Studio and see if your device has been detected.'
+  title: 'Facebook API Example',
+  header: 'Facebook Example',
+  text: 'Enter your username and tap the button to pull Facebook information',
+  inputFieldLavel: 'Facebook name',
+  buttonText: 'Call API'
 });
 
 App.models.nodePage = new App.Model.PageModel({
