@@ -50,6 +50,32 @@ exports.listActivity = function(params, callback) {
   return listActivity(params, callback);
 };
 
+
+/**
+ * Get the details of a Facebook user by username
+ * @param {Objects} params Options passed from client act call
+ * @param {Function} callback Callback function we call with args callback(err, response)
+ * */
+exports.getByFacebookUsername = function(params, callback){
+  var username = params.username;
+  
+  //Check for username
+  if(!username || username===""){
+    return callback("Must provide a valid usernam",null);
+  }
+  
+  //Call the Facebook graph API
+  var request = require('request');
+  request('http://graph.facebook.com/'+username, function(err, res, body){
+    if(err){
+      return callback({
+        msg: "Facebook request error", err:err});
+    }
+    return callback(null,body);
+  }
+};
+
+
 exports.getTime = function(params, callback) {
   return callback(null, {
     time: new Date().getTime()
