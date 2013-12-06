@@ -3,11 +3,11 @@
 App.View.StatsView = App.View.BaseView.extend({
 
   templateId: 'stats',
-  model: App.models.statsPage
+  model: App.models.statsPage,
   
-  //events: {
-  //  'click .get-fb-data': 'getByFacebookUsername'
-  //},
+  events: {
+    'click .get-fb-data': 'getByFacebookUsername'
+  }
   
   //initialize: function(){
   //  _.blindAll(this,'getByFacebookUsername');
