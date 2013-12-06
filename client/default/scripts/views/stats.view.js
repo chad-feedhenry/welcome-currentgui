@@ -7,16 +7,16 @@ App.View.StatsView = App.View.BaseView.extend({
   
   events: {
     'click .get-fb-data': 'getByFacebookUsername'
-  },
-  
-  initialize: function(){
-    _.blindAll(this,'getByFacebookUsername');
-  },
-  
-  getByFacebookUsername: function(){
-    var self = this;
-    alert('TEST!');
   }
+  
+  //initialize: function(){
+  //  _.blindAll(this,'getByFacebookUsername');
+  //},
+  //
+  //getByFacebookUsername: function(){
+  //  var self = this;
+  //  alert('TEST!');
+  //}
   
 });
   
