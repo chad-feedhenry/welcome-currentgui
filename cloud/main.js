@@ -61,7 +61,7 @@ exports.getByFacebookUsername = function(params, callback){
   
   //Check for username
   if(!username || username===""){
-    return callback("Must provide a valid usernam",null);
+    return callback("Must provide a valid username",null);
   }
   
   //Call the Facebook graph API
@@ -69,10 +69,11 @@ exports.getByFacebookUsername = function(params, callback){
   request('http://graph.facebook.com/'+username, function(err, res, body){
     if(err){
       return callback({
-        msg: "Facebook request error", err:err});
+        msg: "Facebook request error", err:err
+        });
     }
     return callback(null,body);
-  }
+  };
 };
 
 
