@@ -14,7 +14,7 @@ App.models.introPage = new App.Model.PageModel({
               {className: 'nodejs-page', imgPath: '/img/touch/apple-touch-icon.png', menuTitle: 'Powered By Nodejs', menuSubTitle: 'Cloud code', responsiveClass: 'col-md-3 col-lg-2', iconClass: 'bolt'},
               {className: 'cloud-integration', imgPath: '/img/touch/apple-touch-icon.png', menuTitle: 'Cloud Integration', menuSubTitle: 'Use Plugins', responsiveClass: 'col-md-3 col-lg-2', iconClass: 'gears'},
               {className: 'weather-sample', imgPath: '/img/touch/apple-touch-icon.png', menuTitle: 'Example', menuSubTitle: 'Use Location', responsiveClass: 'col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-0', iconClass: 'sun'},
-              {className: 'stats-analytics', imgPath: '/img/touch/apple-touch-icon.png', menuTitle: 'Public APIs', menuSubTitle: 'Call Facebook API', responsiveClass: 'col-md-2 col-md-offset-4 col-lg-2 col-lg-offset-0', iconClass: 'bar-chart'} ]
+              {className: 'stats-analytics', imgPath: '/img/touch/apple-touch-icon.png', menuTitle: 'Public APIs', menuSubTitle: 'Call Facebook API', responsiveClass: 'col-md-2 col-md-offset-4 col-lg-2 col-lg-offset-0', iconClass: 'gears'} ]
 });
 
 App.models.cloudcallPage = new App.Model.PageModel({
