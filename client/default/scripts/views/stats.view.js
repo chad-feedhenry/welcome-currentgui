@@ -7,9 +7,9 @@ App.View.StatsView = App.View.BaseView.extend({
   
   events: {
     'click .get-fb-btn': 'getByFacebookUsername'
-  },
+  }
   
-  initialize: function(){
+  /*initialize: function(){
     _.blindAll(this,'getByFacebookUsername');
   },
   
@@ -27,4 +27,6 @@ App.View.StatsView = App.View.BaseView.extend({
       alert(err.error);
     });
   },
+  */
+  
 });
