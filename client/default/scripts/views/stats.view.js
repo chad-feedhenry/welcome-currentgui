@@ -17,18 +17,17 @@ App.View.StatsView = App.View.BaseView.extend({
   getByFacebookUsername: function(){
     //var self = this;
     alert('TEST!');
+    $fh.act({
+      act: 'getByFacebookUsername',
+      req: {
+        username : username
+      }
+    });
   }
   
 });
   
-  /*events: {
-    'click .get-fb-btn': 'getByFacebookUsername'
-  }*/
-  
-  /*initialize: function(){
-    _.blindAll(this,'getByFacebookUsername');
-  },
-  
+  /*
   getByFacebookUsername: function(){
     var inputField = this.$el.find('#nameField');
     var username = inputField.val();
