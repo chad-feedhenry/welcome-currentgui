@@ -16,7 +16,7 @@ App.View.StatsView = App.View.BaseView.extend({
   //
   getByFacebookUsername: function(){
     //var self = this;
-    //alert('TEST!');
+    alert('TEST!');
   }
   
 });
