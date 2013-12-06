@@ -22,7 +22,16 @@ App.View.StatsView = App.View.BaseView.extend({
       req: {
         username : username
       }
-    });
+    }, function(res){
+      alert(JSON.stringify(res));
+    }, function(msg, err){
+      alert(err.error);
+    }
+    
+    
+    
+    
+    );
   }
   
 });
