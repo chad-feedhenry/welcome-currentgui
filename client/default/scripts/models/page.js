@@ -29,7 +29,7 @@ App.models.statsPage = new App.Model.PageModel({
   title: 'Facebook API Example',
   header: 'Facebook Example',
   text: 'Enter your username and tap the button to pull Facebook information',
-  inputFieldLavel: 'Facebook name',
+  inputFieldLabel: 'Facebook name',
   buttonText: 'Call API'
 });
 
