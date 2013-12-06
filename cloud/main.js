@@ -52,29 +52,31 @@ exports.listActivity = function(params, callback) {
 
 
 /**
- * Get the details of a Facebook user by username
- * @param {Objects} params Options passed from client act call
+ * Get the details of a facebook user by username
+ * @param {Object} params This option is passed from our client act call.
  * @param {Function} callback Callback function we call with args callback(err, response)
- * */
+ **/
 exports.getByFacebookUsername = function(params, callback){
   var username = params.username;
-  
-  //Check for username
-  if(!username || username===""){
-    return callback("Must provide a valid username",null);
+  //Check if user name is provided
+  if(!username || username === ""){
+    return callback("username cannot be empty/undefined", null);
   }
   
-  //Call the Facebook graph API
+  //Call facebook graph API
   var request = require('request');
-  request('http://graph.facebook.com/'+username, function(err, res, body){
+  request('http://graph.facebook.com/' + username, function(err, res, body){
     if(err){
       return callback({
-        msg: "Facebook request error", err:err
-        });
+        msg: "Facebook Request Error", err:err
+      });
     }
-    return callback(null,body);
-  };
+    return callback (null, body);
+  });
 };
+
+
+
 
 
 exports.getTime = function(params, callback) {
