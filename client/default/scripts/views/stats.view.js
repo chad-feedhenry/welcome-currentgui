@@ -9,13 +9,7 @@ App.View.StatsView = App.View.BaseView.extend({
     'click .get-fb-data': 'getByFacebookUsername'
   },
   
-  //initialize: function(){
-    //_.blindAll(this,'getByFacebookUsername');
-    //_.blindAll(this,'getByFacebookUsername');
-  //}
-  //
   getByFacebookUsername: function(){
-    //var self = this;
     alert('TEST!');
     $fh.act({
       act: 'getByFacebookUsername',
@@ -23,8 +17,10 @@ App.View.StatsView = App.View.BaseView.extend({
         username : username
       }
     }, function(res){
+      alert("Chad RES TEST");
       alert(JSON.stringify(res));
     }, function(msg, err){
+      alert("Chad Err Test");
       alert(err.error);
     }
     
