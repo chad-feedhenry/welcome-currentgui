@@ -21,6 +21,8 @@ App.View.StatsView = App.View.BaseView.extend({
       var result = JSON.stringify(res);
       alert("response = " + result);
       
+      this.$el.find('.response_content').removeClass('hidden');
+      this.$el.find('extra_response').removeClass('hidden');
       
       //this.$el.find('.hidden').removeClass('hidden');
       //this.$el.find('.response_content').removeClass('alert-error').addClass('alert-success').html('Response: ' + res.text);
