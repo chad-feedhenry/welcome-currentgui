@@ -59,17 +59,14 @@ exports.listActivity = function(params, callback) {
  **/
 exports.getByFacebookUsername = function(params, callback){
   var username = params.username;
-  //Check if user name is provided
-  //return callback("Chad Testing Cloud Side Callback",null); 
-
-  //if(!username || username === ""){
-  //  return callback("username cannot be empty/undefined", null);
-  //}
+  
+  if(!username || username === ""){
+    return callback("username cannot be empty/undefined", null);
+  }
   
   //Call facebook graph API
   var request = require('request');
   request('http://graph.facebook.com/' + username, function(err, res, body){
-  //request('http://graph.facebook.com/chadwik66', function(err, res, body){
     if(err){
       return callback({
         msg: "Facebook Request Error", err:err
