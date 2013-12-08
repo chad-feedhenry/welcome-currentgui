@@ -19,10 +19,8 @@ App.View.StatsView = App.View.BaseView.extend({
       //  username : username
       //}
     }, function(res){
-      alert("Chad RES TEST");
       alert(JSON.stringify(res));
     }, function(msg, err){
-      alert("Chad Err Test");
       alert(err.error);
     }
     
@@ -34,19 +32,3 @@ App.View.StatsView = App.View.BaseView.extend({
   
 });
   
-  /*
-  getByFacebookUsername: function(){
-    var inputField = this.$el.find('#nameField');
-    var username = inputField.val();
-    $fh.act({
-      act: 'getByFacebookUsername',
-      req: {
-        username : username
-      }
-    }, fucntion(res){
-      alert(JSON.stringify(res));
-    }, function(msg, err){
-      alert(err.error);
-    });
-  },
-  */
