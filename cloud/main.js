@@ -7,6 +7,7 @@ var connectDB = require('./databrowser').connectDB;
 var recordActivity = require('./record_activity').recordActivity;
 var listActivity = require('./record_activity').listActivity;
 
+
 var dbUrl = 'mongodb://127.0.0.1:27017/test';
 if(process.env && !process.env.FH_USE_LOCAL_DB && process.env.FH_MONGODB_CONN_URL){
   dbUrl = process.env.FH_MONGODB_CONN_URL;
@@ -57,12 +58,11 @@ exports.listActivity = function(params, callback) {
  * @param {Function} callback Callback function we call with args callback(err, response)
  **/
 exports.getByFacebookUsername = function(params, callback){
-  //var username = params.username;
+  var username = params.username;
   //Check if user name is provided
   return callback("Chad Testing Cloud Side Callback",null); 
-};
 
-  /*if(!username || username === ""){
+  if(!username || username === ""){
     return callback("username cannot be empty/undefined", null);
   }
   
@@ -77,7 +77,7 @@ exports.getByFacebookUsername = function(params, callback){
     return callback (null, body);
   });
 };
-*/
+
 
 
 
