@@ -25,7 +25,7 @@ App.View.StatsView = App.View.BaseView.extend({
       //this.$el.find('.response_content').removeClass('alert-error').addClass('alert-success').html('Response: ' + res.text);
       //this.$el.find('.response_content').removeClass('alert-error').addClass('alert-success').html('Response: ' + JSON.stringify(res));
       
-      //this.$el.find('.response_content').removeClass('alert-error').addClass('alert-success').html(result);
+      this.$el.find('.response_content').removeClass('alert').html("SUCCESS!!!");
         
       
       //this.$el.find('.extra_response').removeClass('hidden');
