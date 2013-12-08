@@ -31,7 +31,7 @@ App.models.statsPage = new App.Model.PageModel({
   text: 'Enter your username and tap the button to pull Facebook information',
   inputFieldLabel: 'Facebook name',
   buttonText: 'Call API',
-  facebookData: 'Enter Facebook Name Above'
+  extraRes: 'Enter Facebook Name Above'
 });
 
 App.models.nodePage = new App.Model.PageModel({
