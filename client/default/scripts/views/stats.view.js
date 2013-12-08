@@ -19,6 +19,9 @@ App.View.StatsView = App.View.BaseView.extend({
       }
     }, function(res){
       alert(JSON.stringify(res));
+      this.$el.find('.extra_response').removeClass('hidden');
+      alert("Changing val...");
+      this.$el.find('.extra_response').text(JSON.stringify(res));
     }, function(msg, err){
       alert(err.error);
     }
