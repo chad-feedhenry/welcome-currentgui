@@ -57,9 +57,12 @@ exports.listActivity = function(params, callback) {
  * @param {Function} callback Callback function we call with args callback(err, response)
  **/
 exports.getByFacebookUsername = function(params, callback){
-  var username = params.username;
+  //var username = params.username;
   //Check if user name is provided
-  if(!username || username === ""){
+  return callback("Chad Testing Cloud Side Callback",null); 
+};
+
+  /*if(!username || username === ""){
     return callback("username cannot be empty/undefined", null);
   }
   
@@ -74,7 +77,7 @@ exports.getByFacebookUsername = function(params, callback){
     return callback (null, body);
   });
 };
-
+*/
 
 
 
