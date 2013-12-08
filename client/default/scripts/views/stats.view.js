@@ -21,6 +21,8 @@ App.View.StatsView = App.View.BaseView.extend({
       var result = JSON.stringify(res);
       alert("response = " + result);
       
+      //TODO: FIGURE OUT HOW TO GET THIS TO WRITE TO THE SCREEN!!!
+      
       this.$el.find('.response_content').removeClass('hidden');
       this.$el.find('extra_response').removeClass('hidden');
       
