@@ -12,10 +12,12 @@ App.View.StatsView = App.View.BaseView.extend({
   getByFacebookUsername: function(){
     alert('TEST!');
     $fh.act({
-      act: 'getByFacebookUsername',
-      req: {
-        username : username
-      }
+      act: 'getByFacebookUsername'
+      
+      //act: 'getByFacebookUsername',
+      //req: {
+      //  username : username
+      //}
     }, function(res){
       alert("Chad RES TEST");
       alert(JSON.stringify(res));
