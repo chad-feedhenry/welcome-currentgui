@@ -18,11 +18,10 @@ App.View.StatsView = App.View.BaseView.extend({
         username : username
       }
     }, function(res){
-      self.gotData(res);
+      var result = JSON.stringify(res);
+      alert("response = " + result);
       
-      //var result = JSON.stringify(res);
-      //alert(JSON.stringify(res));
-      //alert("response = " + result);
+      
       //this.$el.find('.hidden').removeClass('hidden');
       //this.$el.find('.response_content').removeClass('alert-error').addClass('alert-success').html('Response: ' + res.text);
       //this.$el.find('.response_content').removeClass('alert-error').addClass('alert-success').html('Response: ' + JSON.stringify(res));
@@ -32,27 +31,12 @@ App.View.StatsView = App.View.BaseView.extend({
       
       //this.$el.find('.extra_response').removeClass('hidden');
       //this.$el.find('.extra_response').removeClass('hidden');
-      //alert("Val Changed...");
+      alert("Val Changed...");
       //this.$el.find('.extra_response').text(JSON.stringify(res));
     }, function(msg, err){
       alert(err.error);
     }
     );
-  },
-  
-  gotData: function(res){
-    var result = JSON.stringify(res);
-    alert("response = " + result);
-    
-    
-    //this.$el.find('.hidden').removeClass('hidden');
-    //this.$el.find('.response_content').removeClass('alert-error').addClass('alert-success').html('Response: ' + res.text);
-    //this.$el.find('.extra_response').removeClass('hidden');
-  
   }
-
-  
-  
-  
 });
   
